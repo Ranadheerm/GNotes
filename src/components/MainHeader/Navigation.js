@@ -11,9 +11,12 @@ const Navigation = () => {
   return (
     <header className="container">
       <nav className="navbar   navbar-light bg-light">
-        <p className="navbar-brand me-auto">G Notes</p>
+        <p className="navbar-brand mx-5 me-auto text-success">G Notes</p>
         {isLoggedIn && (
-          <button className="btn btn-outline-danger" onClick={logOutHandler}>
+          <button
+            className="btn btn-outline-danger mx-5"
+            onClick={logOutHandler}
+          >
             Logout
           </button>
         )}

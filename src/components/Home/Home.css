@@ -1,0 +1,13 @@
+.rana {
+    border-right: 3px solid lightgray;
+}
+
+
+@media (max-width: 575px) {
+    .rana {
+        border-right: none;
+    }
+    .rana{
+        border-bottom: 3px solid lightgray;
+    }
+}

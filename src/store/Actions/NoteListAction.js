@@ -1,4 +1,4 @@
-import { AddNote, RemoveNote } from "../Constants/NoteListConstant";
+import { AddNote, RemoveNote, UpdateNote } from "../Constants/NoteListConstant";
 
 export const removeFromNoteList = (id) => (dispatch) => {
   dispatch({
@@ -10,6 +10,13 @@ export const removeFromNoteList = (id) => (dispatch) => {
 export const addToFromNoteList = (obj) => (dispatch) => {
   dispatch({
     type: AddNote,
+    payload: obj,
+  });
+};
+
+export const updateNoteListItem = (obj) => (dispatch) => {
+  dispatch({
+    type: UpdateNote,
     payload: obj,
   });
 };
